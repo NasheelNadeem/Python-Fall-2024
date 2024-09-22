@@ -1,0 +1,90 @@
+import turtle
+
+def face(x,y,radius,fill_color):
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.forward(radius)
+    turtle.left(90)
+    turtle.fillcolor(fill_color)
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+    turtle.setheading(0)
+
+def nose(x,y,radius,fill_color):
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.forward(radius)
+    turtle.left(90)
+    turtle.fillcolor(fill_color)
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+    turtle.setheading(0)
+
+def eye(x,y,radius,fill_color):
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.forward(radius)
+    turtle.left(90)
+    turtle.fillcolor(fill_color)
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+    turtle.setheading(0)
+
+def iris(x,y,radius,fill_color):
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.forward(radius)
+    turtle.left(90)
+    turtle.fillcolor(fill_color)
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+    turtle.setheading(0)
+
+def pupil(x,y,radius,fill_color):
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.forward(radius)
+    turtle.left(90)
+    turtle.fillcolor(fill_color)
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+    turtle.setheading(0)
+
+def mouth(x,y,radius,fill_color):
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.left(-90)
+    turtle.color(fill_color)
+    turtle.begin_fill()
+    turtle.circle(radius,180)
+    turtle.end_fill()
+    turtle.penup()
+    turtle.left(90)
+
+def main():
+    turtle.speed(5)
+    x=0
+    y=0
+    radius=int(input("enter radius"))
+    fill_color=input("enter color of face")
+    face(x,y,radius,fill_color)
+    fill_color=input("enter color of nose")
+    nose(x,y,radius*0.15,fill_color)
+    fill_color=input("enter color of eye")
+    eye(radius*0.40,radius*0.40,radius*0.20,fill_color)
+    eye(-radius*0.40,radius*0.40,radius*0.20,fill_color)
+    fill_color=input("enter color of iris")
+    iris(radius*0.40,radius*0.40,radius*0.10,fill_color)
+    iris(-radius*0.40,radius*0.40,radius*0.10,fill_color)
+    fill_color=input("enter color of pupil")
+    pupil(radius*0.40,radius*0.40,radius*0.05,fill_color)
+    pupil(-radius*0.40,radius*0.40,radius*0.05,fill_color)
+    fill_color=input("enter color of mouth")
+    mouth(-radius*0.50,-radius*0.30,radius*0.50,fill_color)
+    input("press enter")
+main()
